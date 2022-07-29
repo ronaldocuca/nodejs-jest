@@ -13,7 +13,7 @@ export class UsersController {
         
         database.push(name)
 
-        return res.status(200).json({ mensagem: `Usuario ${name} criado`});
+        return res.status(201).json({ mensagem: `Usuario ${name} criado`});
     }
 
     listarUsuario(req: Request, res: Response): Response {

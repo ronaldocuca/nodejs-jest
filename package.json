@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "commonjs",
   "scripts": {
-    "start": "nodemon src/index.js",
-    "start:dev": "ts-node-dev 'src/index.ts'",
+    "build": "rm -rf ./build && tsc",
+    "start": "node build/index.js",
+    "dev": "ts-node-dev 'src/index.ts'",
     "test": "jest"
   },
   "keywords": [],
